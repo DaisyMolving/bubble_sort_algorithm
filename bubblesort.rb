@@ -1,7 +1,7 @@
 class Bubblesort
   
   def find_length(array_to_sort)
-
-	 3
+	bubblength = array_to_sort.length
+	bubblength
   end
 end
