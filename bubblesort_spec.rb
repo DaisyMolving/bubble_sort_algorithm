@@ -19,4 +19,10 @@ describe Bubblesort do
 	 result = bubblesort.sorted([1,2,3,7,8])
 	 expect(result).to eq true
   end
+
+  it 'should return false if array is not sorted' do
+	 bubblesort = Bubblesort.new
+	 result = bubblesort.sorted([6,3,1,4,7])
+	 expect(result).to eq false
+  end
 end
