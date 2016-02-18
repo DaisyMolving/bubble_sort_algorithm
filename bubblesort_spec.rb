@@ -37,4 +37,10 @@ describe Bubblesort do
 	 result = bubblesort.swap!([7,2])
 	 expect(result).to eq [2,7]
   end
+
+  it 'should swap numbers in array if not in ascending order' do
+	 bubblesort = Bubblesort.new
+	 result = bubblesort.order([7,2])
+	 expect(result).to eq [2,7]
+  end
 end
