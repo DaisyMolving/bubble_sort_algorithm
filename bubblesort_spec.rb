@@ -28,13 +28,13 @@ describe Bubblesort do
 
   it 'should swap numbers in array [5,3] to be in ascending order' do
 	 bubblesort = Bubblesort.new
-	 result = bubblesort.swap_ascend([5,3])
+	 result = bubblesort.swap!([5,3])
 	 expect(result).to eq [3,5]
   end
 
   it 'should swap numbers in array [7,2] to be in ascending order' do
 	 bubblesort = Bubblesort.new
-	 result = bubblesort.swap_ascend([7,2])
+	 result = bubblesort.swap!([7,2])
 	 expect(result).to eq [2,7]
   end
 end

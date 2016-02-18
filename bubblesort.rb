@@ -18,7 +18,8 @@ class Bubblesort
 	# truly_sorted
   # end
 
-  def swap_ascend(array_to_sort)
-	 [3,5]
+  def swap!(array_to_sort)
+	 array_to_sort[0], array_to_sort[1] = array_to_sort[1], array_to_sort[0]
+	 array_to_sort
   end
 end
