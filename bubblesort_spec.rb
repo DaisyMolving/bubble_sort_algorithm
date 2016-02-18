@@ -31,4 +31,10 @@ describe Bubblesort do
 	 result = bubblesort.swap_ascend([5,3])
 	 expect(result).to eq [3,5]
   end
+
+  it 'should swap numbers in array [7,2] to be in ascending order' do
+	 bubblesort = Bubblesort.new
+	 result = bubblesort.swap_ascend([7,2])
+	 expect(result).to eq [2,7]
+  end
 end
