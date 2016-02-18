@@ -13,4 +13,10 @@ describe Bubblesort do
 	 result = bubblesort.find_length([1,7,8,9,6])
 	 expect(result).to eq 5
   end
+
+  it 'should return true if array is sorted' do
+	 bubblesort = Bubblesort.new
+	 result = bubblesort.sorted([1,2,3,7,8])
+	 expect(result).to eq true
+  end
 end
