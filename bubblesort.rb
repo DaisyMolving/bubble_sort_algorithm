@@ -1,11 +1,9 @@
 class Bubblesort
   
   def cycle_sort(list)
-	 cycle_times = 0
 	 unsorted = list.length
-	 while cycle_times < unsorted
+	 while 0 < unsorted
 		order(list)
-		cycle_times +=1
 	 	unsorted -= 1
 	 end
 	 list 
