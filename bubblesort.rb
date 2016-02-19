@@ -16,7 +16,8 @@ class Bubblesort
 
   def order(array_to_sort)
 	 current_index = 0
-	 while current_index < array_to_sort.length
+	 unsorted = array_to_sort.length
+	 while current_index < unsorted
 		next_index = current_index + 1
 		unless  array_to_sort.at(current_index) == array_to_sort[-1]	
 		  if array_to_sort.at(current_index) > array_to_sort.at(next_index)
@@ -25,6 +26,7 @@ class Bubblesort
 		end
 		current_index += 1
 	 end
+	 unsorted -=1
 	 array_to_sort
   end
   
