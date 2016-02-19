@@ -31,4 +31,10 @@ describe Bubblesort do
 	 result = bubblesort.order([2,1,3])
 	 expect(result).to eq [1,2,3]
   end
+
+  it 'should swap numbers [1,3,2] to be in ascending order of [1,2,3]' do
+	 bubblesort = Bubblesort.new
+	 result = bubblesort.order([1,3,2])
+	 expect(result).to eq [1,2,3]
+  end
 end
