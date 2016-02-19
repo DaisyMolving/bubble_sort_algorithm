@@ -1,10 +1,5 @@
 class Bubblesort
   
-  def find_length(array_to_sort)
-	bubblength = array_to_sort.length
-	bubblength
-  end
-
   def cycle_sort(array_to_sort)
 	 cycle_times = 0
 	 while cycle_times < (array_to_sort.length - 1)
