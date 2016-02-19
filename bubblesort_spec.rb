@@ -43,4 +43,10 @@ describe Bubblesort do
 	 result = bubblesort.cycle_sort([3,2,1])
 	 expect(result).to eq [1,2,3]
   end
+
+  it 'should swap numbers [7,9,1,6,2,4,3,8,5] to be in ascending order [1,2,3,4,5,6,7,8,9]' do
+	 bubblesort = Bubblesort.new
+	 result = bubblesort.cycle_sort([7,9,1,6,2,4,3,8,5])
+	 expect(result).to eq [1,2,3,4,5,6,7,8,9]
+  end
 end
