@@ -1,28 +1,28 @@
 class Bubblesort
   
-  def cycle_sort(array_to_sort)
+  def cycle_sort(list)
 	 cycle_times = 0
-	 while cycle_times < (array_to_sort.length - 1)
-		order(array_to_sort)
+	 while cycle_times < (list.length - 1)
+		order(list)
 		cycle_times +=1
 	 end
-	 array_to_sort
+	 list 
   end
 
-  def order(array_to_sort)
+  def order(list)
 	 current_index = 0
-	 unsorted = array_to_sort.length
+	 unsorted = list.length
 	 while current_index < unsorted
 		next_index = current_index + 1
-		unless  array_to_sort.at(current_index) == array_to_sort[-1]	
-		  if array_to_sort.at(current_index) > array_to_sort.at(next_index)
-		  array_to_sort.insert(current_index, array_to_sort.delete_at(current_index + 1))
+		unless  list.at(current_index) == list[-1]	
+		  if list.at(current_index) > list.at(next_index)
+		  	list.insert(current_index, list.delete_at(current_index + 1))
 		  end
 		end
 		current_index += 1
 	 end
 	 unsorted -=1
-	 array_to_sort
+	 list 
   end
   
 end
