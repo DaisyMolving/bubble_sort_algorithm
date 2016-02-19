@@ -5,18 +5,14 @@ class Bubblesort
 	bubblength
   end
 
-
-  # def order(array_to_sort)
-	 # array_to_sort.each_cons(2) do |num, next_num|  
-		# if num > next_num
-			# current_order = num, next_num 
-			# current_order.reverse!
-		# end
-		# current_order
-	 # end
-	 # array_to_sort.insert(0, current_order).pop(2)
-	 # array_to_sort.flatten!
-  # end
+  def cycle_sort(array_to_sort)
+	 cycle_times = 0
+	 while cycle_times < (array_to_sort.length - 1)
+		order(array_to_sort)
+		cycle_times +=1
+	 end
+	 array_to_sort
+  end
 
   def order(array_to_sort)
 	 current_index = 0
@@ -31,4 +27,5 @@ class Bubblesort
 	 end
 	 array_to_sort
   end
+  
 end
