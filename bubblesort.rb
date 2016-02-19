@@ -14,15 +14,14 @@ class Bubblesort
 	 unsorted = list.length
 	 while current_index < unsorted
 		next_index = current_index + 1
-		unless  list.at(current_index) == list[-1]	
-		  if list.at(current_index) > list.at(next_index)
-		  	list.insert(current_index, list.delete_at(current_index + 1))
+		unless  list[current_index] == list.last	
+		  if list[current_index] > list[next_index]
+		  	list.insert(current_index, list.delete_at(next_index))
 		  end
 		end
 		current_index += 1
 	 end
 	 unsorted -=1
-	 list 
+	 list
   end
-  
 end
