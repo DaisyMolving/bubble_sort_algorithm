@@ -13,10 +13,8 @@ class Bubblesort
 	 current_index = 0
 	 while current_index < list.length
 		next_index = current_index + 1
-		unless  list[current_index] == list.last	
-		  if list[current_index] > list[next_index]
-		  	list.insert(current_index, list.delete_at(next_index))
-		  end
+		if list[current_index] != list.last && list[current_index] > list[next_index]
+			list.insert(current_index, list.delete_at(next_index))
 		end
 		current_index += 1
 	 end
